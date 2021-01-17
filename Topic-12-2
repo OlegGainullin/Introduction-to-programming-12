@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    int n = 0;
+    int robot = 0;
+    char c = '3';
+    int answer = 0;
+    printf("C: ");
+    scanf("%c", &c);
+    printf("N: ");
+    scanf("%d", &n);
+    if (c == 'N')
+    {
+         robot = 8;
+    }
+    if (c == 'E')
+    {
+         robot = 7;
+    }
+    if (c == 'S')
+    {
+         robot = 6;
+    }
+    if (c == 'W')
+    {
+         robot = 5;
+    }
+    robot += n;
+    if (robot %4 == 0)
+        printf("North");
+    if (robot %4 == 3)
+        printf("East");
+    if (robot %4 == 2)
+        printf("South");
+    if (robot %4 == 1)
+        printf("West");
+    return 0;
+}
