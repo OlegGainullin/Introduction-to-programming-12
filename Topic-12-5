@@ -1,0 +1,88 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main ()
+{
+    char *locale = setlocale(LC_ALL, "");
+    int x;
+    int answer;
+    printf("Введите номер года: ");
+    scanf("%d", &x);
+    printf("год ");
+    switch (x%10)
+    {
+    case 0:
+        printf("бел");
+        break;
+    case 1:
+        printf("бел");
+        break;
+    case 2:
+        printf("черн");
+        break;
+    case 3:
+        printf("черн");
+        break;
+    case 4:
+        printf("зелен");
+        break;
+    case 5:
+        printf("зелен");
+        break;
+    case 6:
+        printf("красн");
+        break;
+    case 7:
+        printf("красн");
+        break;
+    case 8:
+        printf("желт");
+        break;
+    case 9:
+        printf("желт");
+        break;
+    }
+
+    switch (x%12)
+    {
+    case 0:
+        printf("ой обезьяны");
+        break;
+    case 1:
+        printf("ого петуха");
+        break;
+    case 2:
+        printf("ой собаки");
+        break;
+    case 3:
+        printf("ой свиньи");
+        break;
+    case 4:
+        printf("ой крысы");
+        break;
+    case 5:
+        printf("ого быка");
+        break;
+    case 6:
+        printf("ого тигра");
+        break;
+    case 7:
+        printf("ого зайца");
+        break;
+    case 8:
+        printf("ого дракона");
+        break;
+    case 9:
+        printf("ой змеи");
+        break;
+    case 10:
+        printf("ой лошади");
+        break;
+    case 11:
+        printf("ой овцы");
+        break;
+    }
+    return 0;
+}
